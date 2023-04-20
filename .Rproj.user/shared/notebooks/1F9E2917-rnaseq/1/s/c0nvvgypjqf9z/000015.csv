@@ -1,0 +1,9 @@
+"0","require(""EnhancedVolcano"")"
+"2","Loading required package: EnhancedVolcano
+"
+"2","Loading required package: ggplot2
+"
+"2","Loading required package: ggrepel
+"
+"0","EnhancedVolcano(res, lab = rownames(res), x= 'log2FoldChange', y='pvalue',)"
+"0",""

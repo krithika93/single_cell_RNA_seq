@@ -1,0 +1,75 @@
+---
+title: "RnaSeq"
+author: "Krithika_Rajendran"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+## R Markdown
+
+
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("DESeq2")
+
+require(parathyroidGenesSE)
+require(DESeq2)
+
+df <- parathyroidGenesSE
+s <- as.character(df$sample)
+s <- substring(s, nchar(s))
+colData(df)$s <- s
+
+df1 <- subset(parathyroidGenesSE,s=="6"|s=="4"|s=="1"|s=="2")
+df1 <- df1[,df1$s =="6"|df1$s =="4"| df$s =="1" | df$s == "2"]
+df1 <- df1[c(1,2,3,4,5,6,7,8),]
+df1 <- df1[1:8,]
+colData(df1) <- subset(colData(df1)[1:8],)
+df1$sample <- as.character(df1$sample)
+df1 <- df1[,df1$run  != "SRR479076"]
+df1
+
+df1$Comparision <- c("a","a","a","a","b","b","b","b")
+colData(df1)
+dds <- DESeqDataSet(df1, design = ~Comparision)
+```
+
+```{r}
+nrow(dds)
+keep <- rowSums(counts(dds)) > 1
+dds <- dds[keep,]
+nrow(dds)
+rld <- rlog(dds,blind = F)
+rld
+topVarGenes <- head(order(-rowVars(assay(rld))),10)
+topVarGenes
+
+library(gplots)
+heatmap.2(x=assay(rld)[topVarGenes,])
+```
+```{r}
+res <- results(dds1,contrast = c("Comparision","a","b"))
+sub <- subset(res,log2FoldChange > 2 & padj < 0.05)
+sub
+
+```
+## There is no differentially expressed genes in the samples filtered from the assay matrix as the heatmap indicates similarly groups of genes as.
+
+
+```{r}
+res
+
+```
+## Including Plots
+```{r}
+require("EnhancedVolcano")
+
+EnhancedVolcano(res, lab = rownames(res), x= 'log2FoldChange', y='pvalue',)
+
+```
+
+

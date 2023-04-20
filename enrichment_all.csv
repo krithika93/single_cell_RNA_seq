@@ -1,0 +1,8 @@
+"Enrichment FDR","nGenes","Pathway Genes","Fold Enrichment","Pathway","URL","Genes"
+0.0441194685578958,1,18,180.920634920635,"Other glycan degradation","http://www.genome.jp/kegg-bin/show_pathway?hsa00511 "," FUCA2"
+0.0500953577089462,1,41,79.4285714285714,"Homologous recombination","http://www.genome.jp/kegg-bin/show_pathway?hsa03440 "," RAD52"
+0.0515389426454667,1,126,25.8458049886621,"Purine metabolism","http://www.genome.jp/kegg-bin/show_pathway?hsa00230 "," ENPP4"
+0.0515389426454667,1,128,25.4419642857143,"Lysosome","http://www.genome.jp/kegg-bin/show_pathway?hsa04142 "," FUCA2"
+0.0515389426454667,1,84,38.7687074829932,"Complement and coagulation cascades","http://www.genome.jp/kegg-bin/show_pathway?hsa04610 "," CFH"
+0.0515389426454667,1,94,34.644376899696,"Staphylococcus aureus infection","http://www.genome.jp/kegg-bin/show_pathway?hsa05150 "," CFH"
+0.0717005752445768,1,210,15.5074829931973,"Rap1 signaling pathway","http://www.genome.jp/kegg-bin/show_pathway?hsa04015 "," KRIT1"

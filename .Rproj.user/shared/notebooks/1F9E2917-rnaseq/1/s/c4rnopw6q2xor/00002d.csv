@@ -1,0 +1,47 @@
+"0","if (!require(""BiocManager"", quietly = TRUE))"
+"0","    install.packages(""BiocManager"")"
+"0",""
+"0","BiocManager::install(""DESeq2"")"
+"2","'getOption(""repos"")' replaces Bioconductor standard repositories, see '?repositories' for details
+
+replacement repositories:
+    CRAN: https://cran.rstudio.com/
+
+"
+"2","Bioconductor version 3.16 (BiocManager 1.30.19), R 4.2.2 (2022-10-31 ucrt)
+"
+"2","Warning: package(s) not installed when version(s) same as or greater than current; use `force = TRUE` to
+  re-install: 'DESeq2'"
+"2","Installation paths not writeable, unable to update packages
+  path: C:/Program Files/R/R-4.2.2/library
+  packages:
+    Matrix
+"
+"2","Old packages: 'DelayedArray', 'GenomicRanges'
+"
+"1","Update all/some/none? [a/s/n]: "
+"0","a"
+"2","Warning: package ‘GenomicRanges’ is in use and will not be installed"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/data/annotation/bin/windows/contrib/4.2/PACKAGES.rds': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/data/annotation/bin/windows/contrib/4.2/PACKAGES.gz': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/data/experiment/bin/windows/contrib/4.2/PACKAGES.rds': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/data/experiment/bin/windows/contrib/4.2/PACKAGES.gz': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/workflows/bin/windows/contrib/4.2/PACKAGES.rds': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/workflows/bin/windows/contrib/4.2/PACKAGES.gz': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/books/bin/windows/contrib/4.2/PACKAGES.rds': HTTP status was '404 Not Found'"
+"2","Warning: downloaded length 0 != reported length 6776"
+"2","Warning: cannot open URL 'https://bioconductor.org/packages/3.16/books/bin/windows/contrib/4.2/PACKAGES.gz': HTTP status was '404 Not Found'"
+"1","
+"
+"1",""
+"1","  There is a binary version available but the source version is later"
+"1",""
+"1",":
+"
